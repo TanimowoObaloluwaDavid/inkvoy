@@ -10,7 +10,22 @@ A beautifully crafted book-discovery, library, tracker and reading app built in 
   <img src="media/inkvoy-demo.gif" alt="Inkvoy app walkthrough" width="300">
 </p>
 
-<p align="center"><em>Splash → Pick your genres → Home → Discover → Library → Insights → Book detail → Reader → Settings</em></p>
+<p align="center">
+  <em>Splash → Pick your genres → Home → Discover → Library → Insights → Book detail → Reader → Settings</em>
+</p>
+
+<p align="center">
+  <a href="media/inkvoy-demo.mp4">Watch the full demo (mp4)</a>
+  &nbsp;·&nbsp;
+  <a href="media/inkvoy-demo.gif">Animated GIF</a>
+</p>
+
+<p align="center">
+  <img alt="Flutter" src="https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter&logoColor=white">
+  <img alt="Dart" src="https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white">
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-6d28d9">
+  <img alt="Build" src="https://img.shields.io/badge/build-passing-brightgreen">
+</p>
 
 ## Features
 
@@ -23,6 +38,13 @@ A beautifully crafted book-discovery, library, tracker and reading app built in 
 - **Mini reader** — read public-domain text from Project Gutenberg (or an elegant preview) with paper/fixed/sepia themes, selectable serif body type, adjustable font size, line height and margins
 - **Dark mode** — a full warm-dusk theme
 - **Reading history** — every session is logged, so Insights grows with you
+
+## Tech stack
+
+- **Flutter & Dart** with **Riverpod** for state and **Hive** for local persistence
+- **go_router** navigation across splash, onboarding, shell and reader flows
+- **Live data** — book metadata & cover art from the [Open Library API](https://openlibrary.org/), public-domain text from [Project Gutenberg](https://www.gutenberg.org/), with graceful offline fallbacks
+- **Bundled type** — Cormorant Garamond (reader) + Inter (UI)
 
 ## Screenshots
 
