@@ -1,0 +1,107 @@
+name: inkvoy
+description: "Inkvoy — Every page is a voyage. A beautifully crafted book discovery, library, tracker and reading app."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Routing
+  go_router: ^17.5.0
+
+  # Networking & data
+  http: ^1.6.0
+  hive_ce: ^2.19.3
+  hive_ce_flutter: ^2.3.4
+  path_provider: ^2.1.6
+  intl: ^0.20.3
+
+  # Layout & UI
+  carousel_slider: ^5.1.2
+  smooth_page_indicator: ^3.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  phosphor_flutter: ^2.1.0
+
+  # Animation & effects
+  flutter_animate: ^4.5.2
+  confetti: ^0.8.0
+
+  # Images
+  cached_network_image: ^3.4.1
+  palette_generator: ^0.3.3+7
+  share_plus: ^13.3.0
+  video_player: ^2.11.1
+  flutter_svg: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Tooling & asset generation
+  image: ^4.9.2
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/onboarding/
+
+  fonts:
+    - family: CormorantGaramond
+      fonts:
+        - asset: assets/fonts/CormorantGaramond-Regular.ttf
+        - asset: assets/fonts/CormorantGaramond-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/CormorantGaramond-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/CormorantGaramond-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/CormorantGaramond-Italic.ttf
+          style: italic
+        - asset: assets/fonts/CormorantGaramond-MediumItalic.ttf
+          weight: 500
+          style: italic
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon_inkvoy.png"
+  adaptive_icon_background: "#101010"
+  adaptive_icon_foreground: "assets/images/icon_inkvoy_fg.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#101010"
+  image: "assets/images/splash_logo.png"
+  color_dark: "#101010"
+  image_dark: "assets/images/splash_logo.png"
+  android_12:
+    color: "#101010"
+    image: "assets/images/splash_logo_android12.png"
+    color_dark: "#101010"
+    image_dark: "assets/images/splash_logo_android12.png"
+  web: true
