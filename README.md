@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/images/splash_logo.png" alt="Inkvoy" width="150">
+</p>
+
 # Inkvoy — Every Page Is a Voyage
 
 A beautifully crafted book-discovery, library, tracker and reading app built in Flutter. Discover millions of books through the **Open Library API**, curate your own shelves, log every session, and read public-domain classics right inside a calm, paper-themed mini reader.
